@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 import tr.com.t2.controller.ValidateUserInfo;
+import tr.com.t2.domain.T2TFProject;
 import tr.com.t2.service.IUserService;
 
 /**
@@ -151,5 +152,7 @@ public class LoginServlet extends HttpServlet {
         return "Short description";
     }// </editor-fold>
 
-
+    public void createProject(T2TFProject project){
+        userService.createProject(project);
+    }
 }

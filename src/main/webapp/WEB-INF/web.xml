@@ -24,9 +24,17 @@
         <servlet-class>tr.com.t2.controller.MainPageServlet</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>daoServlet</servlet-name>
+        <servlet-class>tr.com.t2.controller.DAOServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>registerServlet</servlet-name>
         <servlet-class>tr.com.t2.controller.RegisterServlet</servlet-class>
     </servlet>
+    <servlet-mapping>
+        <servlet-name>daoServlet</servlet-name>
+        <url-pattern>/DAOServlet</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
